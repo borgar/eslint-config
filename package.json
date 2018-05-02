@@ -1,0 +1,11 @@
+{
+  "name": "@borgar/eslint-config",
+  "version": "1.0.0",
+  "description": "I have opinions on how my code should look.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Borgar Þorsteinsson <borgar@borgar.net> (http://borgar.net/)",
+  "license": "MIT"
+}
