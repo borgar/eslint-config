@@ -1,3 +1,4 @@
+/* globals module, require */
 module.exports = {
   extends: [
     './rules/style',
@@ -12,4 +13,4 @@ module.exports = {
   rules: {
     strict: [ 'error', 'never' ]
   }
-}
+};
