@@ -33,6 +33,36 @@ const obj2 = {
 };
 
 
+
+// ====================
+// === control flow ===
+// ====================
+
+const d = a ? 1 : 2;
+
+if (a === 'foo') {
+  // case 1
+}
+else if (a === 'bar') {
+  // case 2
+}
+else {
+  // case else
+}
+
+switch (a) {
+  case 'foo':
+    // case 1
+    break;
+  case 'bar':
+    // case 2
+    break;
+  default:
+    // case else
+    break;
+}
+
+
 // =================
 // === functions ===
 // =================
@@ -58,6 +88,7 @@ function* generator () {
 }
 
 
+
 // =============
 // === loops ===
 // =============
@@ -70,6 +101,13 @@ let i = 0;
 while (i < 10) {
   myFunc(i++);
 }
+
+i = 0;
+do {
+  i++;
+}
+while (i < 10);
+
 
 
 // =============

@@ -14,7 +14,10 @@ module.exports = {
     'dot-location': [ 'error', 'property' ],
     'eol-last': 'error',
     'generator-star-spacing': [ 'error', 'after' ],
-    'indent': [ 'error', 2, { ignoredNodes: [ 'JSXElement *' ] } ],
+    'indent': [ 'error', 2, {
+      SwitchCase: 1,
+      ignoredNodes: [ 'JSXElement *' ]
+    } ],
     'jsx-quotes': [ 'error', 'prefer-double' ],
     'key-spacing': [ 'error', {
       singleLine: {
