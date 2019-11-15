@@ -48,6 +48,7 @@ module.exports = {
     'no-undef-init': 'error',
     'no-unneeded-ternary': [ 'error', { defaultAssignment: false } ],
     'no-unsafe-finally': 'error',
+    'no-use-before-define': 'error',
     'no-useless-call': 'error',
     'no-useless-computed-key': 'error',
     'no-useless-constructor': 'error',
