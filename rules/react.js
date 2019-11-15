@@ -1,4 +1,4 @@
-// "Whoops" rules: You probably didn't mean to do this...
+// Specific to React
 module.exports = {
   rules: {
     'react/jsx-boolean-value': 'error',
@@ -34,6 +34,7 @@ module.exports = {
     'react/self-closing-comp': 'error',
     'react/sort-comp': [ 'error', {
       order: [
+        'static-variables',
         'static-methods',
         'lifecycle',
         '/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/',
