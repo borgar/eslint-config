@@ -1,4 +1,3 @@
-/* globals module, require */
 module.exports = {
   extends: [
     './rules/style',
