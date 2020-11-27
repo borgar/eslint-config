@@ -1,16 +1,23 @@
 {
   "name": "@borgar/eslint-config",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "I have opinions on how my code should look.",
   "main": "index.js",
   "scripts": {
+    "deprecated": "eslint-find-rules -d",
+    "deprecated-react": "eslint-find-rules --no-core -d react.js",
+    "unused": "eslint-find-rules -u",
+    "unused-react": "eslint-find-rules --no-core -u react.js",
     "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Borgar Þorsteinsson <borgar@borgar.net> (http://borgar.net/)",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "~6.6.0",
-    "eslint-cli": "~1.1.1"
+    "babel-eslint": "~10.1.0",
+    "eslint": "~7.14.0",
+    "eslint-cli": "~1.1.1",
+    "eslint-find-rules": "~3.6.1",
+    "eslint-plugin-react": "~7.21.5"
   }
 }
