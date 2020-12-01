@@ -11,7 +11,7 @@ module.exports = {
     'react/jsx-curly-spacing': [ 'warn', 'never', { allowMultiline: true } ],
     'react/jsx-equals-spacing': [ 'error', 'never' ],
     'react/jsx-first-prop-new-line': [ 'error', 'multiline' ],
-    'react/jsx-fragments': [ 'error', 'element' ],
+    'react/jsx-fragments': [ 'error', 'syntax' ],
     'react/jsx-handler-names': [ 'error', { eventHandlerPrefix: 'on', eventHandlerPropPrefix: 'on' } ],
     'react/jsx-indent': [ 'warn', 2, { checkAttributes: true, indentLogicalExpressions: true } ],
     'react/jsx-indent-props': [ 'warn', 2 ],
