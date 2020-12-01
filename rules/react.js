@@ -8,7 +8,7 @@ module.exports = {
     'react/jsx-closing-bracket-location': [ 'error', 'props-aligned' ],
     'react/jsx-closing-tag-location': 'error',
     'react/jsx-curly-brace-presence': [ 'error', { props: 'never', children: 'never' } ],
-    'react/jsx-curly-spacing': [ 'warn', 'never', { allowMultiline: true } ],
+    'react/jsx-curly-spacing': [ 'error', { when: 'never', allowMultiline: true, children: { when: 'never' } } ],
     'react/jsx-equals-spacing': [ 'error', 'never' ],
     'react/jsx-first-prop-new-line': [ 'error', 'multiline' ],
     'react/jsx-fragments': [ 'error', 'syntax' ],
