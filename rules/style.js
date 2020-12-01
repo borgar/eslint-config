@@ -1,7 +1,9 @@
-// This is the collection of rules that makes the code look a certain way (my way)
+// This is the collection of rules that make
+// the code look a certain way (my way)
 module.exports = {
   rules: {
     'array-bracket-spacing': [ 'error', 'always' ],
+    'arrow-parens': [ 'error', 'as-needed' ],
     'arrow-spacing': [ 'error', { before: true, after: true } ],
     'block-spacing': [ 'error', 'always' ],
     'brace-style': [ 'error', 'stroustrup', { allowSingleLine: true } ],
@@ -9,59 +11,59 @@ module.exports = {
     'comma-spacing': [ 'error', { before: false, after: true } ],
     'comma-style': [ 'error', 'last' ],
     'computed-property-spacing': [ 'error', 'never' ],
-    'curly': [ 'error', 'multi-line' ],
-    'dot-notation': [ 'error', { allowKeywords: true } ],
+    'curly': [ 'error', 'all' ],
+    'default-param-last': 'warn',
     'dot-location': [ 'error', 'property' ],
+    'dot-notation': [ 'error', { allowKeywords: true } ],
     'eol-last': 'error',
+    'func-call-spacing': [ 'error', 'never' ],
     'generator-star-spacing': [ 'error', 'after' ],
-    'indent': [ 'error', 2, {
-      SwitchCase: 1,
-      ignoredNodes: [ 'JSXElement *' ]
-    } ],
+    'implicit-arrow-linebreak': [ 'error', 'beside' ],
+    'indent': [ 'error', 2, { SwitchCase: 1, ignoredNodes: [ 'JSXElement', 'JSXElement > *', 'JSXAttribute', 'JSXIdentifier', 'JSXNamespacedName', 'JSXMemberExpression', 'JSXSpreadAttribute', 'JSXExpressionContainer', 'JSXOpeningElement', 'JSXClosingElement', 'JSXFragment', 'JSXOpeningFragment', 'JSXClosingFragment', 'JSXText', 'JSXEmptyExpression', 'JSXSpreadChild' ] } ],
     'jsx-quotes': [ 'error', 'prefer-double' ],
-    'key-spacing': [ 'error', {
-      singleLine: {
-        beforeColon: false,
-        afterColon: true
-      },
-      multiLine: {
-        beforeColon: false,
-        afterColon: true,
-        mode: 'minimum'
-      }
-    } ],
+    'key-spacing': [ 'error', { singleLine: { beforeColon: false, afterColon: true }, multiLine: { beforeColon: false, afterColon: true, mode: 'minimum' } } ],
     'keyword-spacing': [ 'error', { before: true, after: true } ],
     'linebreak-style': [ 'error', 'unix' ],
+    'lines-between-class-members': [ 'error', 'always', { exceptAfterSingleLine: true } ],
+    'max-len': [ 'error', { code: 120, tabWidth: 2, ignoreUrls: true, ignoreStrings: true, ignoreTemplateLiterals: true, ignoreRegExpLiterals: true } ],
+    'multiline-ternary': [ 'error', 'always-multiline' ],
+    'newline-per-chained-call': [ 'error', { ignoreChainWithDepth: 2 } ],
     'no-extra-parens': [ 'error', 'functions' ],
     'no-floating-decimal': 'warn',
-    'no-mixed-spaces-and-tabs': 'error',
-    'no-multi-spaces': [ 'error', {
-      ignoreEOLComments: true,
-      exceptions: {
-        VariableDeclarator: true,
-        ArrayExpression: true
-      }
-    } ],
     'no-lonely-if': 'error',
+    'no-mixed-spaces-and-tabs': 'error',
+    'no-multi-spaces': [ 'error', { ignoreEOLComments: true, exceptions: { VariableDeclarator: true, ArrayExpression: true } } ],
     'no-multi-str': 'error',
-    'no-multiple-empty-lines': [ 'warn', { max: 3 } ],
+    'no-multiple-empty-lines': [ 'error', { max: 1, maxEOF: 1, maxBOF: 0 } ],
     'no-sequences': 'error',
     'no-trailing-spaces': 'error',
     'no-whitespace-before-property': 'error',
+    'nonblock-statement-body-position': [ 'error', 'beside' ],
     'object-curly-spacing': [ 'error', 'always' ],
+    'object-curly-newline': [ 'error', { consistent: true } ],
+    'object-property-newline': [ 'error', { allowAllPropertiesOnSameLine: true } ],
     'one-var': [ 'error', { initialized: 'never' } ],
     'operator-linebreak': [ 'error', 'after', { overrides: { '?': 'before', ':': 'before' } } ],
-    'quotes': [ 'error', 'single', 'avoid-escape' ],
+    'padded-blocks': [ 'error', 'never' ],
+    'prefer-exponentiation-operator': 'warn',
+    'prefer-regex-literals': 'warn',
+    'prefer-rest-params': 'error',
+    'prefer-spread': 'warn',
     'quote-props': [ 'error', 'consistent-as-needed' ],
+    'quotes': [ 'error', 'single', 'avoid-escape' ],
+    'rest-spread-spacing': [ 'error', 'never' ],
     'semi': [ 'error', 'always' ],
     'semi-spacing': [ 'error', { before: false, after: true } ],
+    'semi-style': [ 'error', 'last' ],
     'space-before-blocks': [ 'error', 'always' ],
     'space-before-function-paren': [ 'error', 'always' ],
     'space-in-parens': [ 'error', 'never' ],
     'space-infix-ops': 'error',
     'space-unary-ops': [ 'error', { words: true, nonwords: false } ],
     'spaced-comment': [ 'error', 'always', { markers: [ 'global', 'globals', 'eslint', 'eslint-disable', '*package', '!', ',' ] } ],
+    'switch-colon-spacing': 'error',
     'template-curly-spacing': [ 'error', 'never' ],
+    'template-tag-spacing': [ 'error', 'never' ],
     'yield-star-spacing': [ 'error', 'both' ],
     'yoda': [ 'error', 'never' ]
   }
