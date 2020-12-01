@@ -16,7 +16,7 @@ const swinging = 2;   // multi spaces before comment
 
 // allow lax-spacing in json-style structures
 const myTable = [
-  [ 'foo',    1,   12, 12, 1234 ], // multi spaces before comment
+  [ 'foo',    1,   12, 12, 1234 ],   // multi spaces before comment
   [ 'foo', 1234,  123,  1,   12 ],
   [ 'foo',   12, 1234,  1, 1234 ]
 ];
@@ -31,8 +31,6 @@ const obj2 = {
   'foo1':  123,
   'foo2':  123
 };
-
-
 
 // ====================
 // === control flow ===
@@ -62,7 +60,6 @@ switch (a) {
     break;
 }
 
-
 // =================
 // === functions ===
 // =================
@@ -87,8 +84,6 @@ function* generator () {
   yield 1;
 }
 
-
-
 // =============
 // === loops ===
 // =============
@@ -108,14 +103,11 @@ do {
 }
 while (i < 10);
 
-
-
 // =============
 // === class ===
 // =============
 
 class Bar extends Foo {
-
   static who () {
     return 'Bar';
   }
@@ -132,6 +124,5 @@ class Bar extends Foo {
   inc () {
     this.value++;
   }
-
-};
+}
 

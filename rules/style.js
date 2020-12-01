@@ -19,7 +19,7 @@ module.exports = {
     'func-call-spacing': [ 'error', 'never' ],
     'generator-star-spacing': [ 'error', 'after' ],
     'implicit-arrow-linebreak': [ 'error', 'beside' ],
-    'indent': [ 'error', 2, { ignoredNodes: [ 'JSXElement', 'JSXElement > *', 'JSXAttribute', 'JSXIdentifier', 'JSXNamespacedName', 'JSXMemberExpression', 'JSXSpreadAttribute', 'JSXExpressionContainer', 'JSXOpeningElement', 'JSXClosingElement', 'JSXFragment', 'JSXOpeningFragment', 'JSXClosingFragment', 'JSXText', 'JSXEmptyExpression', 'JSXSpreadChild' ] } ],
+    'indent': [ 'error', 2, { SwitchCase: 1, ignoredNodes: [ 'JSXElement', 'JSXElement > *', 'JSXAttribute', 'JSXIdentifier', 'JSXNamespacedName', 'JSXMemberExpression', 'JSXSpreadAttribute', 'JSXExpressionContainer', 'JSXOpeningElement', 'JSXClosingElement', 'JSXFragment', 'JSXOpeningFragment', 'JSXClosingFragment', 'JSXText', 'JSXEmptyExpression', 'JSXSpreadChild' ] } ],
     'jsx-quotes': [ 'error', 'prefer-double' ],
     'key-spacing': [ 'error', { singleLine: { beforeColon: false, afterColon: true }, multiLine: { beforeColon: false, afterColon: true, mode: 'minimum' } } ],
     'keyword-spacing': [ 'error', { before: true, after: true } ],
