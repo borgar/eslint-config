@@ -1,6 +1,6 @@
 {
   "name": "@borgar/eslint-config",
-  "version": "2.0.2",
+  "version": "2.1.0",
   "description": "I have opinions on how my code should look.",
   "main": "index.js",
   "scripts": {
