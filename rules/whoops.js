@@ -32,7 +32,7 @@ module.exports = {
     'no-unmodified-loop-condition': 'error',
     'no-unreachable': 'error',
     'no-unreachable-loop': 'error',
-    'no-unused-vars': [ 'error', { vars: 'all', args: 'none' } ],
+    'no-unused-vars': 'error',
     'no-useless-backreference': 'warn',
     'no-var': 'warn',
     'prefer-numeric-literals': 'error',
