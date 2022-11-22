@@ -3,6 +3,8 @@ module.exports = {
   rules: {
     'react/button-has-type': 'warn',
     'react/default-props-match-prop-types': 'warn',
+    'react/hook-use-state': 'error',
+    'react/iframe-missing-sandbox': 'warn',
     'react/jsx-boolean-value': 'error',
     'react/jsx-child-element-spacing': 'warn',
     'react/jsx-closing-bracket-location': [ 'error', 'props-aligned' ],
@@ -21,7 +23,7 @@ module.exports = {
     'react/jsx-no-comment-textnodes': 'error',
     'react/jsx-no-duplicate-props': 'error',
     'react/jsx-no-script-url': 'error',
-    'react/jsx-no-target-blank': 'warn',
+    'react/jsx-no-target-blank': 'error',
     'react/jsx-no-undef': 'error',
     'react/jsx-no-useless-fragment': 'error',
     'react/jsx-pascal-case': 'error',

@@ -1,5 +1,6 @@
-module.exports = Object.assign({}, require('.'), {
-  parser: 'babel-eslint',
+const self = require('./index.js');
+
+module.exports = Object.assign({}, self, {
   parserOptions: {
     ecmaVersion: 2020,
     sourceType: 'module',

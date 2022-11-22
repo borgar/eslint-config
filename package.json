@@ -1,6 +1,6 @@
 {
   "name": "@borgar/eslint-config",
-  "version": "2.2.1",
+  "version": "3.0.0",
   "description": "I have opinions on how my code should look.",
   "main": "index.js",
   "scripts": {
@@ -14,10 +14,9 @@
   "author": "Borgar Þorsteinsson <borgar@borgar.net> (http://borgar.net/)",
   "license": "MIT",
   "devDependencies": {
-    "babel-eslint": "~10.1.0",
-    "eslint": "~7.24.0",
+    "eslint": "~8.28.0",
     "eslint-cli": "~1.1.1",
-    "eslint-find-rules": "~3.6.1",
-    "eslint-plugin-react": "~7.23.2"
+    "eslint-find-rules": "~4.1.0",
+    "eslint-plugin-react": "~7.31.11"
   }
 }

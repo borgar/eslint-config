@@ -25,7 +25,7 @@ module.exports = {
     'keyword-spacing': [ 'error', { before: true, after: true } ],
     'linebreak-style': [ 'error', 'unix' ],
     'lines-between-class-members': [ 'error', 'always', { exceptAfterSingleLine: true } ],
-    'max-len': [ 'error', { code: 120, tabWidth: 2, ignoreUrls: true, ignoreStrings: true, ignoreTemplateLiterals: true, ignoreRegExpLiterals: true } ],
+    'max-len': [ 'error', { code: 120, comments: 80, tabWidth: 2, ignoreUrls: true, ignoreStrings: true, ignoreTemplateLiterals: true, ignoreRegExpLiterals: true } ],
     'multiline-ternary': [ 'error', 'always-multiline' ],
     'newline-per-chained-call': [ 'error', { ignoreChainWithDepth: 2 } ],
     'no-extra-parens': [ 'error', 'functions' ],

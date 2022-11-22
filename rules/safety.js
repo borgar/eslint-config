@@ -14,7 +14,7 @@ module.exports = {
     'no-cond-assign': 'error',
     'no-constant-condition': 'error',
     'no-dupe-else-if': 'error',
-    'no-empty': [ 'error', { allowEmptyCatch: true } ],
+    'no-empty': [ 'error', { allowEmptyCatch: false } ],
     'no-empty-pattern': 'error',
     'no-eval': 'error',
     'no-extend-native': 'error',

@@ -26,6 +26,7 @@ module.exports = {
     'no-loss-of-precision': 'warn',
     'no-promise-executor-return': 'warn',
     'no-return-await': 'error',
+    'no-empty-static-block': 'error',
     'no-template-curly-in-string': 'warn',
     'no-undefined': 'warn',
     'no-unexpected-multiline': 'error',
