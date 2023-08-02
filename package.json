@@ -1,22 +1,23 @@
 {
   "name": "@borgar/eslint-config",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "I have opinions on how my code should look.",
   "main": "index.js",
   "scripts": {
-    "deprecated": "eslint-find-rules -d",
-    "deprecated-react": "eslint-find-rules --no-core -d react.js",
-    "unused": "eslint-find-rules -u",
-    "unused-react": "eslint-find-rules --no-core -u react.js",
+    "deprecated": "eslint-find-rules -d rules/index-all.js|fgrep -vx 'unused rules'|tr -s '[:blank:]' '\\n'",
+    "deprecated-react": "eslint-find-rules --no-core -d rules/react-all.js|fgrep -vx 'unused rules'|tr -s '[:blank:]' '\\n'",
+    "unused": "eslint-find-rules -u rules/index-all.js|fgrep -vx 'unused rules'|tr -s '[:blank:]' '\\n'",
+    "unused-react": "eslint-find-rules --no-core -u rules/react-all.js|fgrep -vx 'unused rules'|tr -s '[:blank:]' '\\n'",
     "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Borgar Þorsteinsson <borgar@borgar.net> (http://borgar.net/)",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "~8.28.0",
+    "eslint": "~8.44.0",
     "eslint-cli": "~1.1.1",
     "eslint-find-rules": "~4.1.0",
-    "eslint-plugin-react": "~7.31.11"
+    "eslint-plugin-jsdoc": "~46.4.3",
+    "eslint-plugin-react": "~7.32.2"
   }
 }

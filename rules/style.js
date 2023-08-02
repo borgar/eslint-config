@@ -2,7 +2,9 @@
 // the code look a certain way (my way)
 module.exports = {
   rules: {
+    'array-bracket-newline': [ 'error', 'consistent' ],
     'array-bracket-spacing': [ 'error', 'always' ],
+    'array-element-newline': [ 'error', 'consistent' ],
     'arrow-parens': [ 'error', 'as-needed' ],
     'arrow-spacing': [ 'error', { before: true, after: true } ],
     'block-spacing': [ 'error', 'always' ],
@@ -17,7 +19,8 @@ module.exports = {
     'dot-notation': [ 'error', { allowKeywords: true } ],
     'eol-last': 'error',
     'func-call-spacing': [ 'error', 'never' ],
-    'generator-star-spacing': [ 'error', 'after' ],
+    'function-paren-newline': [ 'error', 'consistent' ],
+    'generator-star-spacing': [ 'error', { before: false, after: true, method: { before: true, after: false } } ],
     'implicit-arrow-linebreak': [ 'error', 'beside' ],
     'indent': [ 'error', 2, { SwitchCase: 1, ignoredNodes: [ 'JSXElement', 'JSXElement > *', 'JSXAttribute', 'JSXIdentifier', 'JSXNamespacedName', 'JSXMemberExpression', 'JSXSpreadAttribute', 'JSXExpressionContainer', 'JSXOpeningElement', 'JSXClosingElement', 'JSXFragment', 'JSXOpeningFragment', 'JSXClosingFragment', 'JSXText', 'JSXEmptyExpression', 'JSXSpreadChild' ] } ],
     'jsx-quotes': [ 'error', 'prefer-double' ],
@@ -39,8 +42,8 @@ module.exports = {
     'no-trailing-spaces': 'error',
     'no-whitespace-before-property': 'error',
     'nonblock-statement-body-position': [ 'error', 'beside' ],
-    'object-curly-spacing': [ 'error', 'always' ],
     'object-curly-newline': [ 'error', { consistent: true } ],
+    'object-curly-spacing': [ 'error', 'always' ],
     'object-property-newline': [ 'error', { allowAllPropertiesOnSameLine: true } ],
     'one-var': [ 'error', { initialized: 'never' } ],
     'operator-linebreak': [ 'error', 'after', { overrides: { '?': 'before', ':': 'before' } } ],
@@ -64,7 +67,7 @@ module.exports = {
     'switch-colon-spacing': 'error',
     'template-curly-spacing': [ 'error', 'never' ],
     'template-tag-spacing': [ 'error', 'never' ],
-    'yield-star-spacing': [ 'error', 'both' ],
+    'yield-star-spacing': [ 'error', 'after' ],
     'yoda': [ 'error', 'never' ]
   }
 };

@@ -80,9 +80,14 @@ arr.forEach(d => {
   myFunc(d);
 });
 
-function* generator () {
+// generators
+export const anonGenerator = function* () {
   yield 1;
+};
+function* generator () {
+  yield* anonGenerator();
 }
+export const objectWithGen = { *generator () {} };
 
 // =============
 // === loops ===
@@ -112,6 +117,11 @@ class Bar extends Foo {
     return 'Bar';
   }
 
+  static *generator () {
+  }
+
+  *generator () {}
+
   constructor (init = 0) {
     super();
     this.value = init;
@@ -125,4 +135,3 @@ class Bar extends Foo {
     this.value++;
   }
 }
-

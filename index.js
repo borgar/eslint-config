@@ -6,7 +6,7 @@ module.exports = {
     './rules/whoops'
   ].map(require.resolve),
   parserOptions: {
-    ecmaVersion: 7,
+    ecmaVersion: 'latest',
     sourceType: 'module'
   },
   rules: {
