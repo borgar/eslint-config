@@ -51,6 +51,7 @@ module.exports = {
     'no-inline-comments': 'off',
     'no-invalid-this': 'off',
     'no-magic-numbers': 'off',
+    'no-mixed-operators': 'off',
     'no-negated-condition': 'off',
     'no-new-native-nonconstructor': 'off',
     'no-nonoctal-decimal-escape': 'off',
