@@ -1,4 +1,4 @@
-/* eslint-disable no-unused-vars, no-undef */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 
 // ====================
 // === declarations ===
@@ -36,19 +36,18 @@ const obj2 = {
 // === control flow ===
 // ====================
 
-const d = a ? 1 : 2;
-
-if (a === 'foo') {
+const opt = a ? 'foo' : 'bar';
+if (opt === 'foo') {
   // case 1
 }
-else if (a === 'bar') {
+else if (opt === 'bar') {
   // case 2
 }
 else {
   // case else
 }
 
-switch (a) {
+switch (opt) {
   case 'foo':
     // case 1
     break;
@@ -67,8 +66,8 @@ switch (a) {
 // space after name when declaring a function
 function myFunc (val = 1) {
   const n = 10;
-  const i = 20;
-  return (val * i * (val / n));
+  const j = 20;
+  return (val * j * (val / n));
 }
 
 // no space when calling a function
@@ -93,8 +92,8 @@ export const objectWithGen = { *generator () {} };
 // === loops ===
 // =============
 
-for (let i = 0; i < 10; i++) {
-  myFunc(i);
+for (let x = 0; x < 10; x++) {
+  myFunc(x);
 }
 
 let i = 0;
@@ -108,11 +107,11 @@ do {
 }
 while (i < 10);
 
-// =============
-// === class ===
-// =============
+// ===============
+// === classes ===
+// ===============
 
-class Bar extends Foo {
+class Bar extends Document {
   static who () {
     return 'Bar';
   }
