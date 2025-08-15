@@ -10,7 +10,7 @@ Pull it into your package like this:
 
     npm install --save-dev eslint @eslint/js globals typescript-eslint @borgar/eslint-config
 
-Then add an .eslintrc file:
+Then add an eslint.config.js file:
 
 ```js
 import borgarLint from '@borgar/eslint-config';
