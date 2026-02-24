@@ -115,7 +115,7 @@ const config_jsdoc: Rules = {
 type StyleOpts = {
   commaDangle?: boolean,
   singleBlocks?: boolean
-  lineLength?: null|number|number[],
+  lineLength?: null | number | number[],
 };
 
 export default {

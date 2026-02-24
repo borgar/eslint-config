@@ -13,7 +13,7 @@
   },
   "scripts": {
     "build": "tsup",
-    "lint": "eslint .",
+    "lint": "eslint src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "tsup": {
@@ -36,7 +36,6 @@
     "eslint": "~10.0.2",
     "eslint-cli": "~1.1.1",
     "eslint-plugin-jsdoc": "~62.7.1",
-    "globals": "~17.3.0",
     "tsup": "~8.5.1",
     "typescript-eslint": "~8.56.1"
   },

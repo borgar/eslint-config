@@ -1,6 +1,5 @@
 import borgarLint from './dist/index.js';
 import eslint from '@eslint/js';
-import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
@@ -13,10 +12,6 @@ export default tseslint.config(
     ignores: [
       'dist/*'
     ],
-    languageOptions: {
-      globals: { ...globals.browser },
-      parserOptions: { projectService: { allowDefaultProject: [] } }
-    }
   },
   eslint.configs.recommended,
   tseslint.configs.recommendedTypeChecked,
@@ -27,4 +22,14 @@ export default tseslint.config(
     singleBlocks: false,
     lineLength: Infinity
   }),
+  {
+    languageOptions: {
+      parserOptions: {
+        projectService: true,
+      },
+    },
+    ignores: [
+      'dist/*'
+    ],
+  },
 );
