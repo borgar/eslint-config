@@ -1,6 +1,6 @@
 {
   "name": "@borgar/eslint-config",
-  "version": "4.0.1",
+  "version": "4.1.0",
   "description": "I have opinions on how my code should look.",
   "type": "module",
   "types": "dist/index.d.ts",
@@ -17,8 +17,12 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "tsup": {
-    "entry": [ "src/index.ts" ],
-    "format": [ "esm" ],
+    "entry": [
+      "src/index.ts"
+    ],
+    "format": [
+      "esm"
+    ],
     "target": "node20",
     "splitting": false,
     "sourcemap": true,
@@ -28,15 +32,15 @@
   "author": "Borgar Þorsteinsson <borgar@borgar.net> (http://borgar.net/)",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "~9.33.0",
+    "@eslint/js": "~10.0.1",
+    "eslint": "~10.0.2",
     "eslint-cli": "~1.1.1",
-    "eslint-find-rules": "~5.0.0",
-    "eslint-plugin-jsdoc": "~54.0.0",
-    "eslint-plugin-react": "~7.37.5",
-    "tsup": "~8.5.0",
-    "typescript-eslint": "~8.39.1"
+    "eslint-plugin-jsdoc": "~62.7.1",
+    "globals": "~17.3.0",
+    "tsup": "~8.5.1",
+    "typescript-eslint": "~8.56.1"
   },
   "dependencies": {
-    "@stylistic/eslint-plugin": "~5.2.3"
+    "@stylistic/eslint-plugin": "~5.9.0"
   }
 }
